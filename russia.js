@@ -122,7 +122,7 @@
 	OrenburgOblast, Bashkortostan, SaratovOblast, SamaraOblast,
 	Tatarstan, UlyanovskOblast, PermKrai, PenzaOblast, Udmurtia,
 	Mordovia, Chuvashia, KirovOblast, MariEl, NizhnyNovgorodOblast);
-	st.attr({stroke: '#333', "stroke-width":2});
+	st.attr({stroke: '#222', 'fill':'#ddd'});
 	NovosibirskOblast.attr({"fill": 'red'})
   }
    	
