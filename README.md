@@ -10,6 +10,7 @@ Works where Raphael.js works (Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+
 var paper = Raphael('some_div_id', 800, 800);
 paper.russia(options);
 ```
+options include fill, stroke and hightlight-fill.
 
 To see real example, have a look at test/index.html 
 
