@@ -4,13 +4,23 @@
     <title>g.raphael-russia test</title>
     <script src="js/raphael-min.js"></script>
     <script src="../russia.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="paper"></div>
+    <button id="button1">hightlight 3 regions</button>
+    <button id="button2">unhightlight 3 regions</button>
     <script type="text/javascript">
       var r = Raphael('paper', 800, 484);
       r.setViewBox(0, 0, 1650, 1000, true);
-      r.russia();
+      var rus = r.russia();
+      $('#button1').click(function(){
+        rus.highlight([26, 23, 50]);
+      })
+
+      $('#button2').click(function(){
+        rus.unhighlight([26,23,50]);
+      })
     </script>
   </body>
 </html>
